@@ -2,23 +2,117 @@
 <html lang="en">
 
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: Jaelyn Tran
+EMAIL: jaelynt1@uci.edu
 -->
 
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+  <meta name="author" content="Jaelyn Tran">
+  <meta name="description" content="Jaelyn Tran's portfolio">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Jaelyn Tran</title>
 </head>
 <body>
+  <div class="navigation-bar">
+    <a class="active" href="#Home">Home</a>
+    <a href="#Projects">Projects</a>
+    <a href="#Skills">Skills</a>
+    <a href="#Experience">Experience</a>
+    <a href="#About">About</a>
+    <a href="#Contact">Contact</a>
+  </div>
+
+  <section id="JaelynTran">
+    <div class="profile-container">
+      <div class="profile-text">
+        <h2>Hello!</h2>
+        <h1 class="profile-name">I'm Jaelyn Tran</h1>
+        <h3 class="justified-text">
+          A Computer Science student who finds
+          joy in web development, data management, and
+          creating with intention
+        </h3>
+      </div>
+      <img src="images/profile-picture.png"
+           alt="Profile Picture"
+           class="profile-picture">
+    </div>
+
+    <div class="external-link">
+      <a href="https://www.linkedin.com/in/jaelyntran2002/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/jaelyntran" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+  </section>
+
+  <section id="Projects" style="background-color: #FFF3CF">
+    <h1>What I've Built</h1>
+  </section>
+
+  <section id="Skills">
+    <h1>My Stack</h1>
+  </section>
+
+  <section id="Experience">
+    <h1>Journey So Far</h1>
+  </section>
+
+  <section id="About">
+    <h1>About Me</h1>
+  </section>
+
+  <section id="Contact">
+    <h1>Get in Touch</h1>
+    <form action="" id="contact-form">
+      <div>
+        <label for="fname">First Name</label><br>
+        <input type="text"
+               id="fname"
+               name="fname"
+               placeholder="Your first name.."></input><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text"
+               id="lname"
+               name="lname"
+               placeholder="Your last name.."></input><br>
+        <label for="email-address">Email</label><br>
+        <input type="email"
+               id="email-address"
+               name="email-address"
+               placeholder="Your email address.."></input><br>
+        <label for="message">Message</label><br>
+        <textarea id="message"
+                  name="message"
+                  placeholder="Your message.."
+                  style="height:200px"></textarea>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
+
   <p>
     <a href="http://validator.w3.org/check?uri=referer">
        W3C validator
     </a>
   </p>
+
+  <!-- Load jQuery and Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- Load our own JS file -->
 </body>
 </html>

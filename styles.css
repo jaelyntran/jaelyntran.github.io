@@ -1,0 +1,84 @@
+body {
+    font-family: "Inconsolata", serif;
+    font-weight: 600;
+    font-variation-settings:
+            "wdth" 112.6;
+    padding-top: 20px;
+}
+
+.navigation-bar {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: underline;
+    font-family: "Inconsolata", serif;
+    font-weight: 1000;
+    font-size: large;
+    font-variation-settings:
+            "wdth" 112.6;
+}
+
+.navigation-bar a {
+    color: inherit;
+    outline: none;
+    text-decoration: underline;
+}
+
+.navigation-bar a:hover {
+    color: #B33A3A;
+}
+
+.justified-text {
+    text-align: justify;
+}
+
+section {
+    display: flex;
+    margin: 25px;
+    padding: 25px;
+}
+
+.profile-container {
+    padding-top: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 80px;
+}
+
+.profile-name {
+    color: #E26B43;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+.profile-picture {
+    width: 300px;
+    height: 300px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.external-link {
+    padding-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.external-link a i {
+    color: black;
+    font-size: 40px;
+    transition: color 0.3s ease;
+}
+
+.external-link a i:hover {
+    color: #B33A3A;
+}
+
