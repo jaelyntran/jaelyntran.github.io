@@ -29,47 +29,115 @@ EMAIL: jaelynt1@uci.edu
     <a href="#Contact">Contact</a>
   </div>
 
-  <section id="JaelynTran">
+  <section id="Home">
     <div class="profile-container">
-      <div class="profile-text">
-        <h2>Hello!</h2>
-        <h1 class="profile-name">I'm Jaelyn Tran</h1>
-        <h3 class="justified-text">
-          A Computer Science student who finds
-          joy in web development, data management, and
-          creating with intention
-        </h3>
-      </div>
       <img src="images/profile-picture.png"
            alt="Profile Picture"
            class="profile-picture">
-    </div>
 
-    <div class="external-link">
-      <a href="https://www.linkedin.com/in/jaelyntran2002/" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
+      <div class="profile-text">
+        <div class="greeting">
+          <h1>Hello!</h1>
+          <img src="images/giphy.gif"
+               alt="Pompompurin Animated GIF"
+               class="background-gif">
+        </div>
+        <h1 class="profile-name">I'm Jaelyn Tran</h1>
+        <h1 class="justified-text">
+          A Computer Science student who finds
+          joy in web development, data management, and
+          creating with intention
+        </h1>
+      </div>
 
-      <a href="https://github.com/jaelyntran" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a>
+      <div class="external-link">
+        <a href="https://www.linkedin.com/in/jaelyntran2002/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://github.com/jaelyntran" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
     </div>
   </section>
 
-  <section id="Projects" style="background-color: #FFF3CF">
+  <section id="Projects">
     <h1>What I've Built</h1>
+    <h2>Movie Database Wepapp - demo link</h2>
+    <h2>Web Crawler - Github link</h2>
+    <h2>Simple Calculator - Github link</h2>
   </section>
 
   <section id="Skills">
     <h1>My Stack</h1>
+    <div class="skills-container">
+      <div class="skill">
+        <i class="fa-brands fa-js"></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-html5"></i>
+        <p>HTML</p>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-css3-alt"></i>
+        <p>CSS</p>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-java"></i>
+        <p>Java</p>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-python"></i>
+        <p>Python</p>
+      </div>
+      <div class="skill">
+        <i class="fa-solid fa-code"></i>
+        <p>C++</p>
+      </div>
+      <div class="skill">
+        <i class="fa-solid fa-code"></i>
+        <p>C</p>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-aws"></i>
+        <p>AWS</p>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-docker"></i>
+        <p>Docker</p>
+      </div>
+      <div class="skill">
+        <i class="fas fa-server"></i>
+        <p>Apache Tomcat</p>
+      </div>
+      <div class="skill">
+        <i class="fa-solid fa-database"></i>
+        <p>MySQL</p>
+      </div>
+      <div class="skill">
+        <i class="fa-solid fa-database"></i>
+        <p>PostgreSQL</p>
+      </div>
+      <div class="skill">
+        <i class="fa-brands fa-figma"></i>
+        <p>Figma</p>
+      </div>
+    </div>
   </section>
 
   <section id="Experience">
     <h1>Journey So Far</h1>
+    <h2>NASA Community College Aerospace Scholars</h2>
+    <h2>Personable Software Engineer Intern</h2>
   </section>
 
   <section id="About">
     <h1>About Me</h1>
+    <p>Background</p>
+    <p>What I love about CS</p>
+    <p>Hobbies</p>
   </section>
 
   <section id="Contact">
@@ -96,12 +164,18 @@ EMAIL: jaelynt1@uci.edu
                   name="message"
                   placeholder="Your message"
                   required></textarea>
-        <button type="submit">Submit</button>
+        <button type="submit">Send Message</button>
       </div>
     </form>
-
-    <div id="status-message" style="display:none;"></div>
   </section>
+
+  <div id="status-modal" class="modal">
+    <div class="modal-content">
+      <span id="modal-close" class="close">&times;</span>
+      <h2 id="status-message"></h2>
+    </div>
+  </div>
+
 
   <p>
     <a href="http://validator.w3.org/check?uri=referer">

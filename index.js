@@ -15,14 +15,19 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 
         const result = await response.json();
         const statusMessage = document.getElementById("status-message");
+        const modal = document.getElementById("status-modal");
 
-        statusMessage.style.color = "#b33a3a";
         statusMessage.textContent = result.message;
-        statusMessage.style.display = "block";
+        modal.style.display = "block";
+
+        document.getElementById("modal-close").addEventListener("click", function() {
+            modal.style.display = "none";
+        });
 
         setTimeout(() => {
+            modal.style.display = "none";
             window.location.href = "http://localhost:8000/";
-            }, 3000);
+            }, 5000);
     } catch (error) {
         alert("An unexpected error occurred: " + error.message);
     } finally {

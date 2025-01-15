@@ -7,11 +7,13 @@ body {
 }
 
 .navigation-bar {
+    z-index: 1000;
     position: fixed;
     background-color: white;
     top: 0;
     width: 100%;
-    padding: 20px 50px;
+    height: 80px;
+    padding: 40px 50px;
     display: flex;
     justify-content: space-between;
     text-decoration: underline;
@@ -37,33 +39,68 @@ body {
 }
 
 section {
+    scroll-margin-top: 80px;
     display: flex;
     margin: 25px;
     padding: 25px;
 }
 
+#Home {
+    margin-top: 40px;
+    position: relative;
+    background: url("images/layered-waves-haikei.svg") no-repeat center bottom;
+    background-size: cover;
+    color: #333;
+}
+
+#Projects h1,
+#Skills h1,
+#Experience h1,
+#About h1,
+#Contact h1 {
+    color: #e26b43;
+    font-size: 70px;
+    text-align: center;
+}
+
+.greeting h1 {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.background-gif {
+    display: inline-block;
+    width: 40px;
+    height: auto;
+    vertical-align: top;
+}
+
 .profile-container {
-    padding-top: 80px;
-    display: flex;
-    align-items: flex-end;
+    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+    max-width: 100%;
     justify-content: center;
-    gap: 80px;
+    box-sizing: border-box;
 }
 
 .profile-name {
     color: #E26B43;
-}
-
-.profile-text {
-    flex: 1;
+    z-index: 1;
+    font-size: 70px;
 }
 
 .profile-picture {
-    width: 300px;
+    margin-top: 40px;
+    z-index: -1;
     height: 300px;
+    width: 300px;
     display: block;
     border-radius: 50%;
     object-fit: cover;
+    justify-self: center;
 }
 
 .external-link {
@@ -82,10 +119,38 @@ section {
     color: #B33A3A;
 }
 
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    margin: 20px;
+}
+
+.skill i {
+    font-size: 40px;
+    color: #43281C;
+}
+
+.skill p {
+    font-size: 20px;
+    margin: 0;
+}
+
 #contact-form {
     display: flex;
     flex-direction: column;
     width: 70%;
+    max-width: 700px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -101,6 +166,10 @@ section {
     border-radius: 8px;
     border: 2px solid #ccc;
     margin-bottom: 10px;
+    font-family: "Inconsolata", serif;
+    font-weight: 800;
+    font-variation-settings:
+            "wdth" 112.6;
 }
 
 #contact-form textarea {
@@ -119,8 +188,60 @@ section {
     transition: background-color 0.3s ease;
     display: block;
     margin: 20px auto 0;
+    font-family: "Inconsolata", serif;
+    font-weight: 800;
+    font-variation-settings:
+            "wdth" 112.6;
 }
 
 #contact-form button:hover {
     background-color: #B33A3A;
+    font-weight: bold;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+.modal-content {
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#status-message {
+    font-weight: bold;
+    color: #b33a3a;
+    font-family: "Inconsolata", serif;
+    font-variation-settings:
+            "wdth" 112.6;
+}
+
+.close {
+    color: #b33a3a;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.close:hover,
+.close:focus {
+    color: #4c0606;
+    text-decoration: none;
+    cursor: pointer;
 }
