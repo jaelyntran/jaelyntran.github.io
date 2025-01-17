@@ -16,7 +16,7 @@ body {
     padding: 40px 50px;
     display: flex;
     justify-content: space-between;
-    text-decoration: underline;
+    text-decoration: none;
     font-family: "Inconsolata", serif;
     font-weight: 1000;
     font-size: large;
@@ -25,13 +25,15 @@ body {
 }
 
 .navigation-bar a {
-    color: inherit;
     outline: none;
-    text-decoration: underline;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .navigation-bar a:hover {
     color: #B33A3A;
+    font-weight: bold;
 }
 
 .justified-text {
@@ -46,14 +48,14 @@ section {
 }
 
 #Home {
-    margin-top: 40px;
+    margin-top: 60px;
     position: relative;
-    background: url("images/layered-waves-haikei.svg") no-repeat center bottom;
+    background: url("images/layered-waves-haikei copy.svg") no-repeat center bottom;
     background-size: cover;
+    border-radius: 18px;
     color: #333;
 }
 
-#Projects h1,
 #Skills h1,
 #Experience h1,
 #About h1,
@@ -109,14 +111,112 @@ section {
     gap: 20px;
 }
 
-.external-link a i {
+.external-link a strong {
     color: black;
     font-size: 40px;
     transition: color 0.3s ease;
 }
 
-.external-link a i:hover {
+.external-link a strong:hover {
     color: #B33A3A;
+}
+
+#Projects {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #b33a3a;
+    border-radius: 18px;
+}
+
+#Projects h1 {
+    color: #FFF3CF;
+    font-size: 70px;
+    text-align: center;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card h2, .card h3 {
+    color: #4c0606;
+}
+
+.card {
+    background-color: #FFF3CF !important;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tech-list {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: small;
+    color: #666666;
+}
+
+.tech-list span {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.button {
+    width: auto;
+    align-self: center;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #E26B43;
+    color: #FFF3CF;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+}
+
+.button:hover {
+    background-color: #B33A3A;
+    color: #FFF3CF;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.experience-container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+}
+
+.experience-item {
+    background-color: #43281c;
+    color: #fff3cf;
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 70%;
 }
 
 .skills-container {
@@ -136,7 +236,7 @@ section {
     margin: 20px;
 }
 
-.skill i {
+.skill em {
     font-size: 40px;
     color: #43281C;
 }
@@ -144,6 +244,26 @@ section {
 .skill p {
     font-size: 20px;
     margin: 0;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.about-description {
+    flex: 3;
+    max-width: 75%;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 25%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 #contact-form {
@@ -154,7 +274,6 @@ section {
     margin: 0 auto;
     padding: 20px;
 }
-
 
 #contact-form input[type="text"],
 #contact-form input[type="email"],
