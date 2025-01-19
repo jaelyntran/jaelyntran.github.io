@@ -185,7 +185,7 @@ section {
     text-align: center;
     text-decoration: none;
     background-color: #E26B43;
-    color: #FFF3CF;
+    color: white;
     font-size: 18px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -297,7 +297,7 @@ section {
 
 #contact-form button {
     background-color: #E26B43;
-    color: #fff3cf;
+    color: white;
     font-size: 18px;
     padding: 12px 25px;
     border: none;
