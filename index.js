@@ -26,7 +26,10 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 
         setTimeout(() => {
             modal.style.display = "none";
-            window.location.href = "http://localhost:8000/";
+            window.location.href = "https://jaelyntran.github.io/";
+            /* change to
+             window.location.href = "http://localhost:8000/";
+             if running on localhost */
             }, 5000);
     } catch (error) {
         alert("An unexpected error occurred: " + error.message);
