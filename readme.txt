@@ -46,7 +46,6 @@ I consult my friend (outside of class) to get his opinions on the visual affect 
 
 
 6. Is there anything special we need to know in order to run your code?
-You can run my code locally using http-server or Python built in HTTP.
-If you do, please uncomment line 31 of index.js and comment out line 29 to ensure appropriate contact form redirection.
+You can run my code locally using http-server or Python built in HTTP. If you do, please uncomment line 31 of index.js and comment out line 29 to ensure appropriate contact form redirection.
 My portfolio is also available online at https://jaelyntran.github.io/!
 
