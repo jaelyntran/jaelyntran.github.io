@@ -6,248 +6,49 @@ WRITTEN BY: Jaelyn Tran
 EMAIL: jaelynt1@uci.edu
 -->
 
-<head>
-  <meta charset="utf-8">
-  <meta name="author" content="Jaelyn Tran">
-  <meta name="description" content="Jaelyn Tran's portfolio">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+<style>
+    body {
+      font-family: 'Prompt', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Jaelyn Tran</title>
+    .message-box {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .message-box h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .message-box a {
+      font-size: 1.2rem;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .message-box a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-  <div class="navigation-bar">
-    <a class="active" href="#Home">Home</a>
-    <a href="#Projects">Projects</a>
-    <a href="#Skills">Skills</a>
-    <a href="#Experience">Experience</a>
-    <a href="#About">About</a>
-    <a href="#Contact">Contact</a>
-  </div>
-
-  <section id="Home">
-    <div class="profile-container">
-      <img src="images/profile-picture.png"
-           alt="Profile Picture"
-           class="profile-picture">
-
-      <div class="profile-text">
-        <div class="greeting">
-          <h1>Hello!</h1>
-          <img src="images/giphy.gif"
-               alt="Pompompurin Animated GIF"
-               class="background-gif">
-        </div>
-        <h1 class="profile-name">I'm Jaelyn Tran</h1>
-        <h1 class="justified-text">
-          A Computer Science student who finds
-          joy in web development, data management, and
-          creating with intention
-        </h1>
-      </div>
-
-      <div class="external-link">
-        <a href="https://www.linkedin.com/in/jaelyntran2002/"
-           target="_blank"
-           title="Visit my LinkedIn profile">
-          <strong class="fa-brands fa-linkedin"></strong>
-        </a>
-
-        <a href="https://github.com/jaelyntran"
-           target="_blank"
-           title="Visit my Github profile">
-          <strong class="fa-brands fa-github"></strong>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section id="Projects">
-    <h1>What I've Built</h1>
-    <div class="card-deck">
-      <div class="card">
-        <h2>Movie Database Web App</h2>
-        <p class="tech-list">
-          <span>APACHE</span>
-          <span>TOMCAT</span>
-          <span>MYSQL</span>
-          <span>JDBC</span>
-          <span>JAVA</span>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JAVASCRIPT</span>
-          <span>JQUERY</span>
-          <span>AWS</span>
-        </p>
-        <p class="justified-text"> A full stack architecture built from scratch. Featuring secured log-in with password encryption, full-text
-          search and auto-complete via caching, a catalog of 1000s of movies where users can browse by titles or genres,
-          and cart checkout using sessions. </p>
-        <a href="https://www.youtube.com/watch?v=TTQ6ZGY0fJc"
-           target="_blank" title="View the Project Demo" class="button">Demo</a>
-      </div>
-      <div class="card">
-        <h2>Search Engine</h2>
-        <p class="tech-list">
-          <span>PYTHON</span></p>
-        <p class="justified-text">A search engine focusing on text processing and information retrieval. This project involves building an
-          inverted index and a search feature to handle queries, rank results, efficiently manage large datasets,
-          and a simple GUI for enhanced functionality and complexity. </p>
-        <a href="https://github.com/a-gaede/cs121-assignment3"
-           target="_blank" title="Visit the Github repo" class="button">Github</a>
-      </div>
-      <div class="card">
-        <h2>Simple Calculator</h2>
-        <h3>(In Process)</h3>
-        <p class="tech-list">
-          <span>PYTHON</span></p>
-        <p class="justified-text">A basic calculator application that performs fundamental arithmetic operations—addition, subtraction,
-          multiplication, and division—while also allows recall of the last five calculation results.</p>
-        <a href="https://github.com/jaelyntran/simple-calculator"
-           target="_blank" title="Visit the Github repo" class="button">Github</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="Skills">
-    <h1>My Stack</h1>
-    <div class="skills-container">
-      <div class="skill">
-        <em class="fa-brands fa-js"></em>
-        <p>JavaScript</p>
-      </div>
-      <div class="skill">
-        <em class="fa-brands fa-html5"></em>
-        <p>HTML</p>
-      </div>
-      <div class="skill">
-        <em class="fa-brands fa-css3-alt"></em>
-        <p>CSS</p>
-      </div>
-      <div class="skill">
-        <em class="fa-brands fa-java"></em>
-        <p>Java</p>
-      </div>
-      <div class="skill">
-        <em class="fa-brands fa-python"></em>
-        <p>Python</p>
-      </div>
-      <div class="skill">
-        <em class="fa-solid fa-code"></em>
-        <p>C++</p>
-      </div>
-      <div class="skill">
-        <em class="fa-solid fa-code"></em>
-        <p>C</p>
-      </div>
-      <div class="skill">
-        <em class="fa-brands fa-aws"></em>
-        <p>AWS</p>
-      </div>
-      <div class="skill">
-        <em class="fa-brands fa-docker"></em>
-        <p>Docker</p>
-      </div>
-      <div class="skill">
-        <em class="fas fa-server"></em>
-        <p>Apache Tomcat</p>
-      </div>
-      <div class="skill">
-        <em class="fa-solid fa-database"></em>
-        <p>MySQL</p>
-      </div>
-      <div class="skill">
-        <em class="fa-solid fa-database"></em>
-        <p>PostgreSQL</p>
-      </div>
-      <div class="skill">
-        <em class="fa-brands fa-figma"></em>
-        <p>Figma</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="Experience">
-    <h1>Journey So Far</h1>
-    <ul class="experience-container">
-      <li class="experience-item">
-        <h2>Personable Software Engineer Intern</h2>
-        <p>September 2024 - November 2024</p>
-        <p>Training an AI scanner to read and convert bank statements, checks, payrolls, and other transactional records
-          into Excel, allowing data entry automation. </p>
-      </li>
-      <li class="experience-item">
-        <h2>NASA Community College Aerospace Scholars</h2>
-        <p>January 2023 - August 2023</p>
-        <p>A learning opportunity where I got to work with NASA's engineers and educators to explore NASA's future space
-          plans through workshop and research assessments, including collaboration with peers to design a rover for Mars
-          exploration and engaging in a 4-day robotic competition where my team built and programmed a rover to navigate
-          lunar terrain and collect samples.</p>
-    </ul>
-  </section>
-
-  <section id="About">
-    <h1>About Me</h1>
-    <div class="about-container">
-      <div class="about-description">
-        <p>Though I now call Los Angeles home, I was born and raised in the vibrant city of Ho Chi Minh, Vietnam. I obtained
-          an associate's degree in Computer Science from Orange Coast College before transferring to University of California, Irvine,
-          where I'm finishing my bachelor's degree in the same field.</p>
-        <p>Given the vast and ever-evolving nature of computer science, much of my academic journey has been a process of
-          exploration and self-discovery as I navigated through different specialties. It wasn’t until recently that I
-          discovered my passion for web design and databases—an ideal combination that allows me to blend my creativity,
-          problem-solving skills, and strong preference for efficiency. By continuing to build on my backend experience in
-          databases and web applications with front-end design, I hope to bring responsive and engaging products to life.</p>
-        <p>I have several hobbies that I enjoy in my free time. Some of my favorite activities include hiking, nature
-          photography, creating crochet pieces for my loved ones, and experimenting with new cooking recipes. I'm a big fan
-          of Pompompurin and I have a special place in my heart for animals, especially cats.</p>
-      </div>
-      <div class="about-picture">
-        <img src="images/0A42B3AE-81DB-466A-9059-DE9B527C3C39_2_13.jpg"
-             alt="A collage of Jaelyn, hiking, and cat pictures"
-             class="collage-picture">
-      </div>
-    </div>
-  </section>
-
-  <section id="Contact">
-    <h1>Get in Touch</h1>
-    <form id="contact-form">
-      <div>
-        <label for="fname">First Name</label><br>
-        <input type="text"
-               id="fname"
-               name="fname"
-               placeholder="Your first name" required><br>
-        <label for="lname">Last Name</label><br>
-        <input type="text"
-               id="lname"
-               name="lname"
-               placeholder="Your last name" required><br>
-        <label for="email">Email</label><br>
-        <input type="email"
-               id="email"
-               name="email"
-               placeholder="Your email" required><br>
-        <label for="message">Message</label><br>
-        <textarea id="message"
-                  name="message"
-                  placeholder="Your message"
-                  required></textarea>
-        <button type="submit">Send Message</button>
-      </div>
-    </form>
-  </section>
-
-  <div id="status-modal" class="modal">
-    <div class="modal-content">
-      <span id="modal-close" class="close">&times;</span>
-      <p id="status-message" style="font-size: 2rem"></p>
-    </div>
+  <div class="message-box">
+    <h1>🚀 My portfolio has moved!</h1>
+    <p>You can now find my latest work at <a href="https://jaelyntran.vercel.app/" target="_blank">https://jaelyntran.vercel.app/</a></p>
+    <p>Please update your bookmarks — see you there!</p>
   </div>
 
   <!-- Load jQuery and Bootstrap JS -->
